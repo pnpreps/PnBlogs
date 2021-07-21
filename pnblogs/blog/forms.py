@@ -8,7 +8,7 @@ choices = Category.objects.all().values_list('name','name')
 class addPostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'author', 'category', 'thumbnail', 'body')
+        fields = ('title', 'author', 'category', 'thumbnail','body')
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control'}),
@@ -26,7 +26,5 @@ class editPostForm(forms.ModelForm):
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control'}),
-            # 'thumbnail': forms.ImageField(),
-            # 'author': forms.Select(attrs={'class': 'form-control'}),
             'body': forms.Textarea(attrs={'class': 'form-control'}),
         }
