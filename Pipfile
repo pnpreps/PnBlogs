@@ -8,6 +8,7 @@ pillow = "*"
 django = "*"
 mysqlclient = "*"
 djangocms-admin-style = "==2.0.2"
+django-ckeditor = "*"
 
 [dev-packages]
 
